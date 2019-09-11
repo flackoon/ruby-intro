@@ -1,1 +1,1 @@
-currently at: https://guides.rubyonrails.org/getting_started.html#adding-some-validation
+currently at: https://guides.rubyonrails.org/getting_started.html#adding-a-second-model
