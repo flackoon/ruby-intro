@@ -1,3 +1,4 @@
+<%# The @article object is available to any partials rendered in the view because we defined it as an instance variable %>
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -7,6 +8,14 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+<hr>
 
-<%= link_to 'Edit', edit_article_path(@article) %>
+<h2>Comments</h2>
+<hr>
+<%= render @article.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+ 
+<%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
